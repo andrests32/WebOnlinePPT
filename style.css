@@ -1,0 +1,238 @@
+/* Pagina principal del juego, parte de la seleccion de jugadores. */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+    font-family: 'Black Ops One', cursive;
+    background-image: url(./img/Sin\ título.jpeg);
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.title {
+    color: white;
+    font-size: xxx-large;
+    text-shadow: 4px 3px 0px black;
+    border-bottom: solid white;
+}
+
+img {
+    width: 250px;
+}
+
+
+.subtitle {
+    color: white;
+    border-bottom: solid white;
+    text-shadow: 4px 3px 0px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+
+
+.tarjeta-imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.stilo-texto-mascota {
+    width: 190px;
+    height: 120px;
+    background-color: #FFFFDD;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #26577C;
+    opacity: .9;
+    border: 2px solid #26577C;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: #F2F7A1;
+}
+
+.tarjeta-imagen img {
+    width: 100px;
+    height: 100px;
+}
+
+
+#boton-mascota {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #FFFFDD;
+    font-family: 'Black Ops One', cursive;
+    color: #016A70;
+    border: 2px solid #26577C;
+    cursor: pointer;
+    margin-top: 30px;
+    opacity: .9;
+    text-shadow: 0px 1px 0px white;
+    font-size: large;
+}
+
+/* Segunda pagina, seleccion de ataques con los que haran los jugadores..*/
+
+.contenedor-de-vs {
+    background-color: #FFFFDD;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    color: #26577C;
+    font-size: x-large;
+    border: 2px solid #26577C;
+}
+
+.logo-vs {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFDD;
+    border-radius: 100%;
+    opacity: .9;
+    border: 2px solid #26577C;
+    opacity: .9;
+}
+
+.contenedor-de-vs1 {
+    background-color: #FFFFDD;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    color: #26577C;
+    font-size: x-large;
+    border: 2px solid #26577C;
+    opacity: .9;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.botones-y-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.boton-de-ataque-princi {
+    background-color: #FFFFDD;
+    border-radius: 30px;
+    font-size: x-large;
+    padding: 10px;
+    font-family: 'Black Ops One', cursive;
+    border: 2px solid #26577C;
+    color: #26577C;
+    width: 180px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mensajes {
+    width: 400px;
+    background-color: #FFFFDD;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Black Ops One', cursive;
+    font-size: xx-large;
+    color: #352F44;
+    border: 2px solid #26577C;
+    text-shadow: 2px 2px 0px #B9B4C7;
+
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #26577C;
+    font-family: 'Black Ops One', cursive;
+    font-size: x-large;
+    background-color: #FFFEC4;
+    border-radius: 10px;
+
+}
+
+.contenedor-mensajes-ataque {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cajas {
+    margin-top: 30px;
+    width: 150px;
+    color: #26577C;
+    background-color: #FFFFDD;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Black Ops One', cursive;
+    font-size: x-large;
+    border: 2px solid #26577C;
+}
+
+@media (max-width: 360px) {
+    .title {
+        text-align: center;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .tarjeta-imagen {
+        flex-direction: column;
+    }
+
+    .contenedor-de-vs,
+    .contenedor-de-vs1 {
+        display: flexbox;
+        text-align: center;
+        justify-content: center;
+        width: 300px;
+        height: 100px;
+    }
+
+    .botones-y-container {
+        display: flexbox;
+        text-align: center;
+        width: 50px;
+    }
+
+    #mensajes {
+        display: flexbox;
+        text-align: center;
+        width: 300px;
+    }
+}
